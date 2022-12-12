@@ -4,10 +4,10 @@ The source code for Minecraft 1.19.3 "Yet Another Mod" mod made for uni project.
 ## Working builds for testing and running
 All mod builds located in build/libs.
 
-## Reqirements
-This mod reqires Fabric for 1.19.3:
+## Requirements
+This mod requires Fabric for 1.19.3:
 ###### https://fabricmc.net/use/installer/
-Also Fabric API.jar in your mod repository is reqired:
+Also, Fabric API.jar in your mod repository is required:
 ###### https://modrinth.com/mod/fabric-api
 
 ## Optional Optimization
