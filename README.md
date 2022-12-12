@@ -5,7 +5,6 @@ The source code for Minecraft 1.19.3 "Yet Another Mod" mod.
 Builds located in build/libs.
 
 ## Reqirements
-This mod reqires Fabric for 1.19.3 (#Reqirements)
+This mod reqires Fabric for 1.19.3
 
 ### Optional Optimization
-(#AdditionalMods)
