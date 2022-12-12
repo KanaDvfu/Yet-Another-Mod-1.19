@@ -12,4 +12,4 @@ This mod requires Fabric and Fabric API for 1.19.3:
 * * Download Fabric API for 1.19.3. Install it moving it into "/mods"
 
 ## Optional Optimization
-All extra stuff is located in /mods. It only includes optimization mods for better work and test on potato-calculators.
+All extra stuff is located in "/mods". It only includes optimization mods for better work and test on potato-calculators.
