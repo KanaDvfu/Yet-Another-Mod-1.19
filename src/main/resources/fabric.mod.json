@@ -7,7 +7,7 @@
   "description": "Minecraft Mod Project",
   "authors": [
     "CMKana",
-    "LeMosque"
+    "AJMC2002"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -20,10 +20,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.cmkana_lemosque.yetanothermod.YetAnotherMod"
+      "net.CMKana_AJMC2002.yetanothermod.YetAnotherMod"
     ],
     "client": [
-      "net.cmkana_lemosque.yetanothermod.YetAnotherModClient"
+      "net.CMKana_AJMC2002.yetanothermod.YetAnotherModClient"
     ]
   },
   "mixins": [

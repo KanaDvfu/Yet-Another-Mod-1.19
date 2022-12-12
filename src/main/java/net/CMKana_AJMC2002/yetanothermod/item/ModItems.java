@@ -1,6 +1,6 @@
-package net.cmkana_lemosque.yetanothermod.item;
+package net.CMKana_AJMC2002.yetanothermod.item;
 
-import net.cmkana_lemosque.yetanothermod.YetAnotherMod;
+import net.CMKana_AJMC2002.yetanothermod.YetAnotherMod;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -16,12 +16,12 @@ public class ModItems {
 
     //Making custom item group:
     public static final ItemGroup YetAnotherModGroup = FabricItemGroup.builder(
-            new Identifier(net.cmkana_lemosque.yetanothermod.YetAnotherMod.MOD_ID))
+            new Identifier(net.CMKana_AJMC2002.yetanothermod.YetAnotherMod.MOD_ID))
                 .displayName(Text.literal("Yet Another Mod"))
                 .icon(() -> new ItemStack(ModItems.ADRIANIUM))
                 .build();
-    private static Item registerItem(String name, Item item, ItemGroup group) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
+    private static Item registerItem(String name, Item item) {
+        ItemGroupEvents.modifyEntriesEvent(ModItems.YetAnotherModGroup).register(entries -> entries.add(item));
         return Registry.register(Registries.ITEM, new Identifier(YetAnotherMod.MOD_ID, name), item);
     }
     public static void registerModItem() {
@@ -31,14 +31,12 @@ public class ModItems {
     //Adrianium test item
     public static final Item ADRIANIUM = registerItem(
             "adrianium",
-            new Item(new Item.Settings()),
-            YetAnotherModGroup
+            new Item(new Item.Settings())
     );
-    //Cmkanium 2nd test item
+    //Eugenium 2nd test item
     public static final Item EUGENIUM = registerItem(
             "eugenium",
-            new Item(new Item.Settings()),
-            YetAnotherModGroup
+            new Item(new Item.Settings())
     );
 
 }
