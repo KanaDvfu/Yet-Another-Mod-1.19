@@ -11,4 +11,4 @@ Also Fabric API.jar in your mod repository is reqired:
 ###### https://modrinth.com/mod/fabric-api
 
 ## Optional Optimization
-All extra stuff is located in run/mods. It only includes optimization mods for better work and test on potato-calculator.
+All extra stuff is located in mods. It only includes optimization mods for better work and test on potato-calculators.
