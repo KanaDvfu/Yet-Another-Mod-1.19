@@ -4,7 +4,7 @@
 build/classes
 build/devlibs
 build/generated
-#libs
+# build/libs
 build/loom-cache
 build/resources
 build/tmp
@@ -36,7 +36,15 @@ bin/
 
 # fabric
 
-run/
+run/config
+run/data
+run/logs
+# run/mods
+run/resourcepacks
+run/resources
+run/saves
+run/options.txt
+run/usercache.json
 
 # java
 
