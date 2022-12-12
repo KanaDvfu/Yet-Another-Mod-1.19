@@ -7,7 +7,7 @@ All mod builds located in build/libs.
 ## Reqirements
 This mod reqires Fabric for 1.19.3:
 ###### https://fabricmc.net/use/installer/
-Also may reqire Fabric API:
+Also Fabric API.jar in your mod repository is reqired:
 ###### https://modrinth.com/mod/fabric-api
 
 ## Optional Optimization
