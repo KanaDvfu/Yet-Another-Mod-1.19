@@ -1,6 +1,6 @@
-package net.cmkana_lemoske.yetanothermod.mixin;
+package net.cmkana_lemosque.yetanothermod.mixin;
 
-import net.cmkana_lemoske.yetanothermod.YetAnotherMod;
+import net.cmkana_lemosque.yetanothermod.YetAnotherMod;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

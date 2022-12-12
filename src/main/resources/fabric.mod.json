@@ -7,7 +7,7 @@
   "description": "Minecraft Mod Project",
   "authors": [
     "CMKana",
-    "LeMosce"
+    "LeMosque"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -15,15 +15,15 @@
   },
 
   "license": "MIT Licence",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/yetanothermod/textures/item/adrianium.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.cmkana_lemoske.yetanothermod.YetAnotherMod"
+      "net.cmkana_lemosque.yetanothermod.YetAnotherMod"
     ],
     "client": [
-      "net.cmkana_lemoske.yetanothermod.YetAnotherModClient"
+      "net.cmkana_lemosque.yetanothermod.YetAnotherModClient"
     ]
   },
   "mixins": [

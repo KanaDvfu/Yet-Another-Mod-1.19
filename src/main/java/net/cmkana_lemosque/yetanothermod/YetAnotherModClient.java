@@ -1,4 +1,4 @@
-package net.cmkana_lemoske.yetanothermod;
+package net.cmkana_lemosque.yetanothermod;
 
 import net.fabricmc.api.ClientModInitializer;
 
