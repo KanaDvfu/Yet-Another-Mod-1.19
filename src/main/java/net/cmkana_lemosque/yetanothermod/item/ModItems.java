@@ -35,8 +35,8 @@ public class ModItems {
             YetAnotherModGroup
     );
     //Cmkanium 2nd test item
-    public static final Item CMKANIUM = registerItem(
-            "cmkanium",
+    public static final Item EUGENIUM = registerItem(
+            "eugenium",
             new Item(new Item.Settings()),
             YetAnotherModGroup
     );
