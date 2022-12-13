@@ -1,4 +1,4 @@
-# Yet-Another-Mod-1.19
+# Yet-Another-Mod-1.19.3
 The source code for Minecraft 1.19.3 "Yet Another Mod" mod made for uni project.
 
 ## Working builds for testing and running
