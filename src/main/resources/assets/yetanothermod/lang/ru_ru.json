@@ -1,4 +1,7 @@
 {
   "item.yetanothermod.adrianium": "Адрианиум",
-  "item.yetanothermod.eugenium": "Евгениум"
+  "item.yetanothermod.eugenium": "Евгениум",
+
+  "block.yetanothermod.eugenium_block" : "Евгениевый блок",
+  "block.yetanothermod.adrianium_block" : "Адрианиевый блок"
 }
