@@ -1,0 +1,16 @@
+{
+  "type" : "minecraft:crafting/shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#" : {
+      "item" : "yetanothermod:eugenium"
+    }
+  },
+  "result" : {
+    "item" : "yetanotermod:eugenium_block"
+  }
+}

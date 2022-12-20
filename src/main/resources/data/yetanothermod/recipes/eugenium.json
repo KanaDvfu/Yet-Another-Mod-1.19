@@ -1,0 +1,12 @@
+{
+  "type" : "minecraft:crafting_shapeless",
+  "ingredients" : [
+    {
+      "item" : "yetanothermod:eugenium_block"
+    }
+  ],
+  "result" : {
+    "item" : "yetanotermod:eugenium",
+    "count" : 9
+  }
+}

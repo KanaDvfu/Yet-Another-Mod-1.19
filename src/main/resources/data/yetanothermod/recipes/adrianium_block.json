@@ -1,0 +1,16 @@
+{
+  "type" : "minecraft:crafting/shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#" : {
+      "item" : "yetanothermod:adrianium"
+    }
+  },
+  "result" : {
+    "item" : "yetanotermod:adrianium_block"
+  }
+}

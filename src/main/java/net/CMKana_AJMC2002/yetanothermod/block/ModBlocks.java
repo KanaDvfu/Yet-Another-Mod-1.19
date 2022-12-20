@@ -18,7 +18,7 @@ public class ModBlocks {
     public static final Block EUGENIUM_BLOCK = registerBlock(
             "eugenium_block",
             new Block(FabricBlockSettings.of(
-                    Material.AMETHYST).strength(4f).requiresTool()),
+                    Material.METAL).strength(4f).requiresTool()),
             ModItemGroup.YetAnotherModGroup);
 
     public static final Block ADRIANIUM_BLOCK = registerBlock(

@@ -1,0 +1,12 @@
+{
+  "type" : "minecraft:crafting_shapeless",
+  "ingredients" : [
+    {
+      "item" : "yetanothermod:adrianium_block"
+    }
+  ],
+  "result" : {
+    "item" : "yetanotermod:adrianium",
+    "count" : 9
+  }
+}
