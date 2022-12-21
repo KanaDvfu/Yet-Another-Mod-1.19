@@ -24,7 +24,7 @@ public class ModBlocks {
     public static final Block ADRIANIUM_BLOCK = registerBlock(
             "adrianium_block",
             new Block(FabricBlockSettings.of(
-                            Material.AMETHYST).strength(4f).requiresTool()),
+                    Material.AMETHYST).strength(4f).requiresTool()),
             ModItemGroup.YetAnotherModGroup);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
@@ -34,7 +34,7 @@ public class ModBlocks {
 
     private static Item registerBlockItem(String name, Block block, ItemGroup tab) {
         ItemGroupEvents.modifyEntriesEvent(tab).register(entries -> entries.add(block));
-        return  Registry.register(Registries.ITEM, new Identifier(YetAnotherMod.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
+        return Registry.register(Registries.ITEM, new Identifier(YetAnotherMod.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
     }
 
     public static void registerModBlocks() {
