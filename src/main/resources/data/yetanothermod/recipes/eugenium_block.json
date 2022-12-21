@@ -1,16 +1,17 @@
 {
-  "type" : "minecraft:crafting/shaped",
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "yetanothermod:eugenium"
+    }
+  },
   "pattern": [
     "###",
     "###",
     "###"
   ],
-  "key": {
-    "#" : {
-      "item" : "yetanothermod:eugenium"
-    }
-  },
-  "result" : {
-    "item" : "yetanotermod:eugenium_block"
+  "result": {
+    "item": "yetanothermod:eugenium_block"
   }
 }
