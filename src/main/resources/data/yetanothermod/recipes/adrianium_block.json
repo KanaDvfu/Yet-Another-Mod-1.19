@@ -1,16 +1,17 @@
 {
-  "type" : "minecraft:crafting/shaped",
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "yetanothermod:adrianium"
+    }
+  },
   "pattern": [
     "###",
     "###",
     "###"
   ],
-  "key": {
-    "#" : {
-      "item" : "yetanothermod:adrianium"
-    }
-  },
-  "result" : {
-    "item" : "yetanotermod:adrianium_block"
+  "result": {
+    "item": "yetanothermod:adrianium_block"
   }
 }
