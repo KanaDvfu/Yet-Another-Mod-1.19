@@ -19,8 +19,6 @@ import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 public class CernosItem extends RangedWeaponItem implements Vanishable {
-    public static final int TICKS_PER_SECOND = 20;
-    public static final int RANGE = 15;
 
     public CernosItem(Item.Settings settings) {
         super(settings);
@@ -29,32 +27,45 @@ public class CernosItem extends RangedWeaponItem implements Vanishable {
     @Override
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
         boolean bl2;
-        int i;
         float f;
-        if (!(user instanceof PlayerEntity)) {
+        if (!(user instanceof PlayerEntity playerEntity)) {
             return;
         }
-        PlayerEntity playerEntity = (PlayerEntity)user;
+        boolean bl = playerEntity.getAbilities().creativeMode;
         ItemStack itemStack = playerEntity.getArrowType(stack);
+        if (itemStack.isEmpty() && !bl) {
+            return;
+        }
         if (itemStack.isEmpty()) {
             itemStack = new ItemStack(Items.ARROW);
         }
-        if ((double)(f = net.minecraft.item.BowItem.getPullProgress(i = this.getMaxUseTime(stack) - remainingUseTicks)) < 0.1) {
+        if ((double)(f = CernosItem.getPullProgress(this.getMaxUseTime(stack) - remainingUseTicks)) < 0.1) {
             return;
         }
+        bl2 = bl && itemStack.isOf(Items.ARROW);
         if (!world.isClient) {
-            int k;
-            int j;
             ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
             PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
             persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, f * 3.0f, 1.0f);
             if (f == 1.0f) {
                 persistentProjectileEntity.setCritical(true);
             }
+            persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + (double)2 * 0.5 + 0.5);
+            persistentProjectileEntity.setPunch(1);
+            persistentProjectileEntity.setOnFireFor(100);
             stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
+            if (bl2 || playerEntity.getAbilities().creativeMode && (itemStack.isOf(Items.SPECTRAL_ARROW) || itemStack.isOf(Items.TIPPED_ARROW))) {
+                persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
+            }
             world.spawnEntity(persistentProjectileEntity);
         }
-        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0f, 1.0f / (world.getRandom().nextFloat() * 0.4f + 1.2f) + f * 0.5f);
+        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.BLOCK_CHAIN_PLACE, SoundCategory.PLAYERS, 1.0f, 1.0f / (world.getRandom().nextFloat() * 0.4f + 1.2f) + f * 0.5f);
+        if (!bl2 && !playerEntity.getAbilities().creativeMode) {
+            itemStack.decrement(1);
+            if (itemStack.isEmpty()) {
+                playerEntity.getInventory().removeOne(itemStack);
+            }
+        }
         playerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
     }
 
@@ -80,7 +91,7 @@ public class CernosItem extends RangedWeaponItem implements Vanishable {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         boolean bl;
         ItemStack itemStack = user.getStackInHand(hand);
-        boolean bl2 = bl = !user.getArrowType(itemStack).isEmpty();
+        bl = !user.getArrowType(itemStack).isEmpty();
         if (user.getAbilities().creativeMode || bl) {
             user.setCurrentHand(hand);
             return TypedActionResult.consume(itemStack);
@@ -98,5 +109,4 @@ public class CernosItem extends RangedWeaponItem implements Vanishable {
         return 15;
     }
 }
-
 
