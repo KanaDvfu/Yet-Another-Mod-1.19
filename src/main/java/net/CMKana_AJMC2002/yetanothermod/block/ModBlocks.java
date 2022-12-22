@@ -18,22 +18,20 @@ public class ModBlocks {
     public static final Block EUGENIUM_BLOCK = registerBlock(
             "eugenium_block",
             new Block(FabricBlockSettings.of(
-                    Material.METAL).strength(4f).requiresTool()),
-            ModItemGroup.YetAnotherModGroup);
+                    Material.METAL).strength(4f).requiresTool()));
 
     public static final Block ADRIANIUM_BLOCK = registerBlock(
             "adrianium_block",
             new Block(FabricBlockSettings.of(
-                    Material.AMETHYST).strength(4f).requiresTool()),
-            ModItemGroup.YetAnotherModGroup);
+                    Material.AMETHYST).strength(4f).requiresTool()));
 
-    private static Block registerBlock(String name, Block block, ItemGroup tab) {
-        registerBlockItem(name, block, tab);
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(YetAnotherMod.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItem(String name, Block block, ItemGroup tab) {
-        ItemGroupEvents.modifyEntriesEvent(tab).register(entries -> entries.add(block));
+    private static Item registerBlockItem(String name, Block block) {
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.YetAnotherModGroup).register(entries -> entries.add(block));
         return Registry.register(Registries.ITEM, new Identifier(YetAnotherMod.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
     }
 
