@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "yetanothermod:adrianium_block"
+    },
+    "*": {
+      "item": "yetanothermod:eugenium_block"
+    },
+    "!": {
+      "item": "minecraft:iron_axe"
+    }
+  },
+  "pattern": [
+    "##*",
+    "#!*",
+    "#**"
+  ],
+  "result": {
+    "item": "yetanothermod:sarofang"
+  }
+}
