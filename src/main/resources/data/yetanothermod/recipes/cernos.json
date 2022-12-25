@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "yetanothermod:adrianium_block"
+    },
+    "*": {
+      "item": "yetanothermod:eugenium_block"
+    },
+    "!": {
+      "item": "minecraft:bow"
+    }
+  },
+  "pattern": [
+    "##*",
+    "#!*",
+    "#**"
+  ],
+  "result": {
+    "item": "yetanothermod:cernos"
+  }
+}

@@ -3,6 +3,7 @@ package net.CMKana_AJMC2002.yetanothermod.item;
 import net.CMKana_AJMC2002.yetanothermod.YetAnotherMod;
 
 import net.CMKana_AJMC2002.yetanothermod.item.custom.CernosItem;
+import net.CMKana_AJMC2002.yetanothermod.item.custom.d20Item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -19,6 +20,9 @@ public class ModItems {
 
     public static final Item Cernos = registerItem(
             "cernos", new CernosItem(new Item.Settings().maxCount(1)));
+
+    public static final Item D20 = registerItem(
+            "d20", new d20Item(new Item.Settings().maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         ItemGroupEvents.modifyEntriesEvent(ModItemGroup.YetAnotherModGroup).register(entries -> entries.add(item));
