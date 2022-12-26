@@ -36,7 +36,7 @@ public abstract class WorldPreset {
                         new FlatChunkGeneratorConfig(
                                 // we don't need to overwrite the structure set
                                 Optional.empty(),
-                                BuiltinRegistries.)
+                                BuiltinRegistries.BIOME)
                         )
                 )
         );
