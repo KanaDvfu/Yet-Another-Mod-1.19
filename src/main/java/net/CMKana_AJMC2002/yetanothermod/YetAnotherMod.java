@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 import software.bernie.geckolib.GeckoLib;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib.GeckoLib;
 
 public class YetAnotherMod implements ModInitializer {
 	public static final String MOD_ID = "yetanothermod";
