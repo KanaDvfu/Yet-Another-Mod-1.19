@@ -13,8 +13,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
 public class YetAnotherBlocks {
-    private YetAnotherBlocks() {}
-
     public static final Block EUGENIUM_BLOCK = registerBlock(
             "eugenium_block",
             new Block(FabricBlockSettings.of(
@@ -31,10 +29,8 @@ public class YetAnotherBlocks {
     }
 
     private static Item registerBlockItem(String name, Block block) {
-        ItemGroupEvents.modifyEntriesEvent(YetAnotherItemGroup.YetAnotherModGroup)
-                .register(entries -> entries.add(block));
-        return Registry.register(Registries.ITEM, YetAnotherMod.id(name),
-                new BlockItem(block, new FabricItemSettings()));
+        ItemGroupEvents.modifyEntriesEvent(YetAnotherItemGroup.YetAnotherModGroup).register(entries -> entries.add(block));
+        return Registry.register(Registries.ITEM, new Identifier(YetAnotherMod.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
     }
 
     public static void register() {
