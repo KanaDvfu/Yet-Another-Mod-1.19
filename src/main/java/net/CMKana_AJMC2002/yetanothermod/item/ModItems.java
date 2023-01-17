@@ -11,6 +11,7 @@ import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
 
@@ -21,10 +22,12 @@ public class ModItems {
             "eugenium", new Item(new Item.Settings()));
 
     public static final Item Cernos = registerItem(
-            "cernos", new CernosItem(new Item.Settings().maxCount(1)));
+            "cernos", new CernosItem(
+                    new Item.Settings().maxCount(1)));
 
     public static final Item Sarofang = registerItem(
-            "sarofang", new AxeItem(ToolMaterials.NETHERITE,6f,-2f, new Item.Settings().maxCount(1)));
+            "sarofang", new AxeItem(ToolMaterials.NETHERITE,6f,-2f,
+                    new Item.Settings().rarity(Rarity.RARE).maxCount(1)));
 
     public static final Item D20 = registerItem(
             "d20", new d20Item(new Item.Settings().maxCount(1)));

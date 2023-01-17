@@ -10,8 +10,12 @@ This mod requires Fabric and Fabric API for 1.19.3:
 * https://fabricmc.net/use/installer/
 * Install Fabric using installer by opening, selecting 1.19.3 version and clicking install.
 ####
-* https://modrinth.com/mod/fabric-api
+For next dependencies you cant download "mods" folder and put it in your Minecraft folder. !Warning - "mods" folder does not contain YetAnotherMod.
 * Download Fabric API for 1.19.3. Install it moving it into mods folder next to yetanothermod.
+* https://modrinth.com/mod/fabric-api
+####
+* Download and Install GeckoLib4 for 1.19.3 like Fabric API.
+* https://modrinth.com/mod/geckolib/version/4.0.3
 
 ## Optional Optimization
 All extra stuff is located in "/mods". It only includes optimization mods for better work and test on potato-calculators like mine is:

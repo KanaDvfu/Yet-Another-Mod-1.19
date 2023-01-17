@@ -1,44 +1,42 @@
 {
-	"schemaVersion": 1,
+  "schemaVersion": 1,
+  "id": "yetanothermod",
+  "version": "${version}",
 
-	"id": "yetanothermod",
+  "name": "Yet Another Mod",
+  "description": "Minecraft Mod Project",
+  "authors": [
+    "CMKana",
+    "AJMC2002"
+  ],
+  "contact": {
+    "homepage": "https://github.com/KanaDvfu/Yet-Another-Mod-1.19",
+    "sources": "https://github.com/KanaDvfu/Yet-Another-Mod-1.19"
+  },
 
-	"version": "${version}",
+  "license": "MIT Licence",
+  "icon": "assets/yetanothermod/textures/item/adrianium.png",
 
-	"name": "Yet Another Mod",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.CMKana_AJMC2002.yetanothermod.YetAnotherMod"
+    ],
+    "client": [
+      "net.CMKana_AJMC2002.yetanothermod.YetAnotherModClient"
+    ]
+  },
+  "mixins": [
+    "yetanothermod.mixins.json"
+  ],
 
-	"description": "Minecraft Mod Project",
-
-	"authors": ["CMKana", "AJMC2002"],
-
-	"contact": {
-		"homepage": "https://github.com/KanaDvfu/Yet-Another-Mod-1.19",
-		"sources": "https://github.com/KanaDvfu/Yet-Another-Mod-1.19"
-	},
-
-	"license": "MIT Licence",
-
-	"icon": "assets/yetanothermod/textures/item/adrianium.png",
-
-	"environment": "*",
-
-	"entrypoints": {
-		"main": ["net.CMKana_AJMC2002.yetanothermod.YetAnotherMod"],
-		"client": ["net.CMKana_AJMC2002.yetanothermod.YetAnotherModClient"]
-	},
-
-	"mixins": ["yetanothermod.mixins.json"],
-
-	"depends": {
-		"fabricloader": ">=0.14.11",
-		"fabric-api": "*",
-		"minecraft": "~1.19.3",
-		"java": ">=17"
-	},
-
-	"suggests": {
-		"another-mod": "*"
-	},
-
-	"accessWidener": "yetanothermod.accesswidener"
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }
