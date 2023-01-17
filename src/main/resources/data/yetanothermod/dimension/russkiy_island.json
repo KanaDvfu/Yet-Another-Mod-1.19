@@ -1,0 +1,10 @@
+{
+	"type": "yetanothermod:russkiy_island",
+	"generator": {
+		"biome_source": {
+			"biome": "yetanothermod:korpus_d",
+			"type": "minecraft:fixed"
+		},
+		"type": "yetanothermod:room_generator"
+	}
+}
