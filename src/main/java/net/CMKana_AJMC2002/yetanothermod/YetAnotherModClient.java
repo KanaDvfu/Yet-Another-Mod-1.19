@@ -7,7 +7,5 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 
 public class YetAnotherModClient implements ClientModInitializer {
     @Override
-    public void onInitializeClient() {
-        EntityRendererRegistry.register(ModEntities.VALKYR, ValkyrRenderer::new);
-    }
+    public void onInitializeClient() {}
 }

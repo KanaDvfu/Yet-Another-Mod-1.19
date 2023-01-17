@@ -1,9 +1,10 @@
 {
-  "item.yetanothermod.adrianium": "Adrianium",
-  "item.yetanothermod.eugenium": "Eugenium",
-  "item.yetanothermod.cernos": "Cernos",
-  "item.yetanothermod.sarofang": "Sarofang",
-  "item.yetanothermod.d20": "D20",
+	"item.yetanothermod.adrianium": "Adrianium",
+	"item.yetanothermod.eugenium": "Eugenium",
+	"item.yetanothermod.cernos": "Cernos",
+	"item.yetanothermod.sarofang": "Sarofang",
+	"item.yetanothermod.d20": "D20",
 
-  "block.yetanothermod.eugenium_block" : "Eugenium block"
+	"block.yetanothermod.eugenium_block": "Eugenium block",
+	"block.yetanothermod.adrianium_block": "Adrianium block"
 }
