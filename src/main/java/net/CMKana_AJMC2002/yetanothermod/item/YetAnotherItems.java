@@ -13,7 +13,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class YetAnotherItems {
-        private YetAnotherItems() {}
 
         public static final Item ADRIANIUM =
                         registerItem("adrianium", new Item(new Item.Settings()));
@@ -37,7 +36,7 @@ public class YetAnotherItems {
                                 new Identifier(YetAnotherMod.MOD_ID, name), item);
         }
 
-        public static void register() {
+        public static void registerModItem() {
                 YetAnotherMod.LOGGER.debug("Registering Mod Items for " + YetAnotherMod.MOD_ID);
         }
 }
