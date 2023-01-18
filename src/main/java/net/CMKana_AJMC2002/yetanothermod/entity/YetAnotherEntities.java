@@ -10,10 +10,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
 public class YetAnotherEntities {
-        private YetAnotherEntities() {}
-
-        public static final EntityType<ValkyrEntity> VALKYR = Registry.register(
-                        Registries.ENTITY_TYPE, YetAnotherMod.id("valkyr"),
-                        FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, ValkyrEntity::new)
-                                        .dimensions(EntityDimensions.fixed(1.5f, 4f)).build());
+    public static final EntityType<ValkyrEntity> VALKYR = Registry.register(
+            Registries.ENTITY_TYPE, YetAnotherMod.id("valkyr"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, ValkyrEntity::new)
+                    .dimensions(EntityDimensions.fixed(1.5f, 4f)).build());
 }

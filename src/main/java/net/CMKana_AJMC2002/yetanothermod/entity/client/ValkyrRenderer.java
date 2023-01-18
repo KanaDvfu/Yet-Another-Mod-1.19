@@ -3,7 +3,6 @@ package net.CMKana_AJMC2002.yetanothermod.entity.client;
 import net.CMKana_AJMC2002.yetanothermod.YetAnotherMod;
 import net.CMKana_AJMC2002.yetanothermod.entity.custom.ValkyrEntity;
 import net.minecraft.client.render.entity.EntityRendererFactory;
-import net.minecraft.util.Identifier;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
