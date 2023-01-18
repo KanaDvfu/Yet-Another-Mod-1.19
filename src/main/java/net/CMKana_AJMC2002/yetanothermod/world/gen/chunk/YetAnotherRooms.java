@@ -7,31 +7,67 @@ public class YetAnotherRooms {
 	static final int ROOM_HEIGHT = 6;
 	static final int ROOM_WIDTH = 5;
 
-	static final boolean[][] CORNER = {{true, true, true, true, true},
-			{true, false, false, false, false}, {true, false, false, false, false},
-			{true, false, false, false, false}, {true, false, false, false, false}};
-	static final boolean[][] EMPTY = {{false, false, false, false, false},
-			{false, false, false, false, false}, {false, false, false, false, false},
-			{false, false, false, false, false}, {false, false, false, false, false}};
-	static final boolean[][] MIDDLE_WALL = {{false, false, false, false, false},
-			{false, false, false, false, false}, {true, true, true, true, true},
-			{false, false, false, false, false}, {false, false, false, false, false}};
-	static final boolean[][] SIDE_WALL = {{true, true, true, true, true},
-			{false, false, false, false, false}, {false, false, false, false, false},
-			{false, false, false, false, false}, {false, false, false, false, false}};
-	static final boolean[][] PASSAGE = {{true, true, false, false, true},
-			{false, false, false, false, true}, {false, false, false, false, false},
-			{false, false, false, false, false}, {false, false, false, false, false}};
+	static final boolean[][] CORNER = {
+			{true, true, true, true, true},
+			{true, false, false, false, false},
+			{true, false, false, false, false},
+			{true, false, false, false, false},
+			{true, false, false, false, false}
+	};
+	static final boolean[][] EMPTY = {
+			{false, false, false, false, false},
+			{false, false, false, false, false},
+			{false, false, false, false, false},
+			{false, false, false, false, false},
+			{false, false, false, false, false}
+	};
+	static final boolean[][] MIDDLE_WALL = {
+			{false, false, false, false, false},
+			{false, false, false, false, false},
+			{true, true, true, true, true},
+			{false, false, false, false, false},
+			{false, false, false, false, false}
+	};
+	static final boolean[][] SIDE_WALL = {
+			{true, true, true, true, true},
+			{false, false, false, false, false},
+			{false, false, false, false, false},
+			{false, false, false, false, false},
+			{false, false, false, false, false}
+	};
+	static final boolean[][] PASSAGE = {
+			{true, true, false, false, true},
+			{false, false, false, false, true},
+			{false, false, false, false, false},
+			{false, false, false, false, false},
+			{false, false, false, false, false}
+	};
 
-	static final boolean[][] THICK_CORNER = {{true, true, true, true, true},
-			{true, true, true, true, true}, {true, true, true, true, true},
-			{true, true, true, false, false}, {true, true, true, false, false}};
-	static final boolean[][] THICK_WALL = {{true, true, true, true, true},
-			{true, true, true, true, true}, {true, true, true, true, true},
-			{false, false, false, false, false}, {false, false, false, false, false}};
+	static final boolean[][] THICK_CORNER = {
+			{true, true, true, true, true},
+			{true, true, true, true, true},
+			{true, true, true, true, true},
+			{true, true, true, false, false},
+			{true, true, true, false, false}
+	};
 
-	static final boolean[][][] ROOMS =
-			{CORNER, EMPTY, MIDDLE_WALL, SIDE_WALL, PASSAGE, THICK_CORNER, THICK_WALL};
+	static final boolean[][] THICK_WALL = {
+			{true, true, true, true, true},
+			{true, true, true, true, true},
+			{true, true, true, true, true},
+			{false, false, false, false, false},
+			{false, false, false, false, false}
+	};
+
+	static final boolean[][][] ROOMS = {
+			CORNER,
+			EMPTY,
+			MIDDLE_WALL,
+			SIDE_WALL,
+			PASSAGE,
+			THICK_CORNER,
+			THICK_WALL
+	};
 
 	public static final boolean[][] getRoom(int x, int y, int z) {
 		int roomX = Math.abs(Math.floorDiv(x, ROOM_WIDTH));
