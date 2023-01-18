@@ -10,7 +10,7 @@
 		"homepage": "https://github.com/KanaDvfu/Yet-Another-Mod-1.19",
 		"sources": "https://github.com/KanaDvfu/Yet-Another-Mod-1.19"
 	},
-	"license": "MIT Licence",
+	"license": "MIT",
 	"icon": "assets/yetanothermod/textures/item/adrianium.png",
 	"environment": "*",
 
@@ -30,7 +30,5 @@
 	},
 	"suggests": {
 		"another-mod": "*"
-	},
-
-	"accessWidener": "yetanothermod.accesswidener"
+	}
 }

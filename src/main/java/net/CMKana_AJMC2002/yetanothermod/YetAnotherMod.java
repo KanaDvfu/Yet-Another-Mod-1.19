@@ -18,8 +18,11 @@ public class YetAnotherMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		YetAnotherItems.registerModItem();
 		YetAnotherBlocks.registerModBlocks();
+		YetAnotherItems.registerModItem();
 		YetAnotherWorldgen.register();
+
+		GeckoLib.initialize();
+		FabricDefaultAttributeRegistry.register(YetAnotherEntities.VALKYR,ValkyrEntity.setAttributes());
 	}
 }
