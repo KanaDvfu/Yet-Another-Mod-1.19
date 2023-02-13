@@ -6,7 +6,14 @@
 	"carvers": {},
 	"spawn_costs": {},
 	"spawners": {
-		"monster": [],
+		"monster": [
+			{
+				"type": "yetanothermod:valkyr",
+				"weight": 5,
+				"minCount": 2,
+				"maxCount": 9
+			}
+		],
 		"creature": [
 			{
 				"type": "minecraft:donkey",

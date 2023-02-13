@@ -51,16 +51,19 @@ public class ValkyrEntity extends HostileEntity implements GeoEntity {
         this.targetSelector.add(3, new ActiveTargetGoal<>(this, IronGolemEntity.class, true));
     }
 
-    private static final RawAnimation IDLE_ANIM = RawAnimation.begin().thenLoop("animation.valkyr.idle");
-    private static final RawAnimation WALK_ANIM = RawAnimation.begin().thenLoop("animation.valkyr.walk");
-    private static final RawAnimation ATTACK_ANIM = RawAnimation.begin().thenPlay("animation.valkyr.attack");
+    private static final RawAnimation IDLE_ANIM =
+            RawAnimation.begin().thenLoop("animation.valkyr.idle");
+    private static final RawAnimation WALK_ANIM =
+            RawAnimation.begin().thenLoop("animation.valkyr.walk");
+    private static final RawAnimation ATTACK_ANIM =
+            RawAnimation.begin().thenPlay("animation.valkyr.attack");
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
         controllers.add(
-                new AnimationController<>(this, "Walk/Idle", 5, state -> state.setAndContinue(state.isMoving() ? WALK_ANIM : IDLE_ANIM)),
-                DefaultAnimations.genericAttackAnimation(this, ATTACK_ANIM)
-        );
+                new AnimationController<>(this, "Walk/Idle", 5,
+                        state -> state.setAndContinue(state.isMoving() ? WALK_ANIM : IDLE_ANIM)),
+                DefaultAnimations.genericAttackAnimation(this, ATTACK_ANIM));
     }
 
     @Override
@@ -69,11 +72,17 @@ public class ValkyrEntity extends HostileEntity implements GeoEntity {
     }
 
     @Override
-    protected SoundEvent getHurtSound(DamageSource source) {return SoundEvents.ENTITY_GENERIC_HURT;}
+    protected SoundEvent getHurtSound(DamageSource source) {
+        return SoundEvents.ENTITY_GENERIC_HURT;
+    }
 
     @Override
-    protected SoundEvent getDeathSound() {return SoundEvents.ENTITY_GENERIC_DEATH;}
+    protected SoundEvent getDeathSound() {
+        return SoundEvents.ENTITY_GENERIC_DEATH;
+    }
 
     @Override
-    protected void playStepSound(BlockPos pos, BlockState state) {this.playSound(SoundEvents.ENTITY_PIG_STEP, 0.07f, 1.0f);}
+    protected void playStepSound(BlockPos pos, BlockState state) {
+        this.playSound(SoundEvents.ENTITY_PIG_STEP, 0.07f, 1.0f);
+    }
 }
