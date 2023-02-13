@@ -19,7 +19,6 @@ import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 public class CernosItem extends RangedWeaponItem implements Vanishable {
-
     public CernosItem(Item.Settings settings) {
         super(settings);
     }

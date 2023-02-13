@@ -50,7 +50,6 @@ public class YetAnotherRooms {
 			{true, true, true, false, false},
 			{true, true, true, false, false}
 	};
-
 	static final boolean[][] THICK_WALL = {
 			{true, true, true, true, true},
 			{true, true, true, true, true},

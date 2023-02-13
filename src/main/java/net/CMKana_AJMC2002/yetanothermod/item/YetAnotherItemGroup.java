@@ -7,8 +7,10 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class YetAnotherItemGroup {
+    private YetAnotherItemGroup() {}
+
     public static final ItemGroup YetAnotherModGroup = FabricItemGroup.builder(
-                    new Identifier(net.CMKana_AJMC2002.yetanothermod.YetAnotherMod.MOD_ID))
+            new Identifier(net.CMKana_AJMC2002.yetanothermod.YetAnotherMod.MOD_ID))
             .displayName(Text.literal("Yet Another Mod"))
             .icon(() -> new ItemStack(YetAnotherItems.ADRIANIUM))
             .build();
