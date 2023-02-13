@@ -32,9 +32,6 @@ processResources {
 
 loom {
 	runs {
-        //
-        // This adds a new gradle task that runs the datagen API: "gradlew runDatagenClient"
-        //
         datagenClient {
             inherit client
             name "Data Generation"
