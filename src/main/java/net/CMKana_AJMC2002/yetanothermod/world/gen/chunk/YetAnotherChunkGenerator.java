@@ -20,6 +20,7 @@ import net.minecraft.world.biome.source.BiomeAccess;
 import net.minecraft.world.biome.source.BiomeSource;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkSection;
+import net.minecraft.world.chunk.ProtoChunk;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.StructureAccessor;
 import net.minecraft.world.gen.chunk.Blender;
@@ -33,10 +34,11 @@ public class YetAnotherChunkGenerator extends ChunkGenerator {
 					.group(BiomeSource.CODEC.fieldOf("biome_source")
 							.forGetter(YetAnotherChunkGenerator::getBiomeSource))
 					.apply(instance, YetAnotherChunkGenerator::new));
-// same for x and z
+	// same for x and z
 	private static final int SEA_LEVEL = 0;
 	private static final int MINIMUM_Y = SEA_LEVEL - 32;
-	private static final int WORLD_HEIGHT = SEA_LEVEL + YetAnotherRooms.NUM_FLOORS * YetAnotherRooms.ROOM_HEIGHT - MINIMUM_Y;
+	private static final int WORLD_HEIGHT =
+			SEA_LEVEL + YetAnotherRooms.NUM_FLOORS * YetAnotherRooms.ROOM_HEIGHT - MINIMUM_Y;
 
 	public YetAnotherChunkGenerator(BiomeSource biomeSource) {
 		super(biomeSource);
@@ -132,6 +134,10 @@ public class YetAnotherChunkGenerator extends ChunkGenerator {
 					if (blockState == Blocks.AIR.getDefaultState()
 							|| SharedConstants.isOutsideGenerationArea(chunk.getPos()))
 						continue;
+
+					if (blockState == Blocks.SEA_LANTERN.getDefaultState()) {
+						((ProtoChunk) chunk).addLightSource(mutablePos);
+					}
 
 					int chunkSectionIndex = chunk.getSectionIndex(y);
 					ChunkSection chunkSection = chunk.getSection(chunkSectionIndex);
