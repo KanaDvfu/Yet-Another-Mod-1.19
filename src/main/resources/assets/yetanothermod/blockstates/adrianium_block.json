@@ -1,5 +1,5 @@
 {
-  "variants": {
-    "": { "model": "yetanothermod:block/adrianium_block" }
-  }
+	"variants": {
+		"": { "model": "yetanothermod:block/adrianium_block" }
+	}
 }

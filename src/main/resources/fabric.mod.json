@@ -17,9 +17,7 @@
 	"entrypoints": {
 		"main": ["net.CMKana_AJMC2002.yetanothermod.YetAnotherMod"],
 		"client": ["net.CMKana_AJMC2002.yetanothermod.YetAnotherModClient"],
-		"fabric-datagen": [
-			"net.CMKana_AJMC2002.yetanothermod.datagen.YetAnotherDataGeneration"
-		]
+		"fabric-datagen": []
 	},
 	"mixins": ["yetanothermod.mixins.json"],
 	"depends": {

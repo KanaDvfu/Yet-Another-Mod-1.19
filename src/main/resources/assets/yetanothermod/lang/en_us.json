@@ -6,5 +6,6 @@
 	"item.yetanothermod.d20": "D20",
 
 	"block.yetanothermod.eugenium_block": "Eugenium block",
-	"block.yetanothermod.adrianium_block": "Adrianium block"
+	"block.yetanothermod.adrianium_block": "Adrianium block",
+	"entity.yetanothermod.valkyr": "Valkyr"
 }

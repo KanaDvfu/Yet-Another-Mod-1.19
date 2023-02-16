@@ -1,10 +1,12 @@
 {
-  "item.yetanothermod.adrianium": "Адрианиум",
-  "item.yetanothermod.eugenium": "Евгениум",
-  "item.yetanothermod.cernos": "Кернунн",
-  "item.yetanothermod.sarofang": "Сарофанг",
-  "item.yetanothermod.d20": "Д20",
+	"item.yetanothermod.adrianium": "Адрианиум",
+	"item.yetanothermod.eugenium": "Евгениум",
+	"item.yetanothermod.cernos": "Кернунн",
+	"item.yetanothermod.sarofang": "Сарофанг",
+	"item.yetanothermod.d20": "Д20",
 
-  "block.yetanothermod.eugenium_block" : "Евгениевый блок",
-  "block.yetanothermod.adrianium_block" : "Адрианиевый блок"
+	"block.yetanothermod.eugenium_block": "Евгениевый блок",
+	"block.yetanothermod.adrianium_block": "Адрианиевый блок",
+
+	"entity.yetanothermod.valkyr": "Валькир"
 }
